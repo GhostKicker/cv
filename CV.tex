@@ -1,0 +1,335 @@
+\documentclass[a4paper,12pt,preview]{report} 
+\usepackage[T2A]{fontenc}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage[labelsep=period]{caption}
+\usepackage[russian]{babel}     %russian support
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} 
+\usepackage{graphicx} 
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+    language=C++,
+    breaklines=true, 
+    numbers=left,
+    basicstyle=\ttfamily,
+    language=C++,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green},
+    morecomment=[l][\color{magenta}]{\#},
+    showspaces=false,                
+    showstringspaces=false,
+}
+
+\lstset{
+  literate={а}{{\selectfont\char224}}1
+           {б}{{\selectfont\char225}}1
+           {в}{{\selectfont\char226}}1
+           {г}{{\selectfont\char227}}1
+           {д}{{\selectfont\char228}}1
+           {е}{{\selectfont\char229}}1
+           {ё}{{\"e}}1
+           {ж}{{\selectfont\char230}}1
+           {з}{{\selectfont\char231}}1
+           {и}{{\selectfont\char232}}1
+           {й}{{\selectfont\char233}}1
+           {к}{{\selectfont\char234}}1
+           {л}{{\selectfont\char235}}1
+           {м}{{\selectfont\char236}}1
+           {н}{{\selectfont\char237}}1
+           {о}{{\selectfont\char238}}1
+           {п}{{\selectfont\char239}}1
+           {р}{{\selectfont\char240}}1
+           {с}{{\selectfont\char241}}1
+           {т}{{\selectfont\char242}}1
+           {у}{{\selectfont\char243}}1
+           {ф}{{\selectfont\char244}}1
+           {х}{{\selectfont\char245}}1
+           {ц}{{\selectfont\char246}}1
+           {ч}{{\selectfont\char247}}1
+           {ш}{{\selectfont\char248}}1
+           {щ}{{\selectfont\char249}}1
+           {ъ}{{\selectfont\char250}}1
+           {ы}{{\selectfont\char251}}1
+           {ь}{{\selectfont\char252}}1
+           {э}{{\selectfont\char253}}1
+           {ю}{{\selectfont\char254}}1
+           {я}{{\selectfont\char255}}1
+           {А}{{\selectfont\char192}}1
+           {Б}{{\selectfont\char193}}1
+           {В}{{\selectfont\char194}}1
+           {Г}{{\selectfont\char195}}1
+           {Д}{{\selectfont\char196}}1
+           {Е}{{\selectfont\char197}}1
+           {Ё}{{\"E}}1
+           {Ж}{{\selectfont\char198}}1
+           {З}{{\selectfont\char199}}1
+           {И}{{\selectfont\char200}}1
+           {Й}{{\selectfont\char201}}1
+           {К}{{\selectfont\char202}}1
+           {Л}{{\selectfont\char203}}1
+           {М}{{\selectfont\char204}}1
+           {Н}{{\selectfont\char205}}1
+           {О}{{\selectfont\char206}}1
+           {П}{{\selectfont\char207}}1
+           {Р}{{\selectfont\char208}}1
+           {С}{{\selectfont\char209}}1
+           {Т}{{\selectfont\char210}}1
+           {У}{{\selectfont\char211}}1
+           {Ф}{{\selectfont\char212}}1
+           {Х}{{\selectfont\char213}}1
+           {Ц}{{\selectfont\char214}}1
+           {Ч}{{\selectfont\char215}}1
+           {Ш}{{\selectfont\char216}}1
+           {Щ}{{\selectfont\char217}}1
+           {Ъ}{{\selectfont\char218}}1
+           {Ы}{{\selectfont\char219}}1
+           {Ь}{{\selectfont\char220}}1
+           {Э}{{\selectfont\char221}}1
+           {Ю}{{\selectfont\char222}}1
+           {Я}{{\selectfont\char223}}1
+}
+
+\usepackage{multicol}
+\setlength{\columnsep}{0.5cm}
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=2cm}% левое поле
+\geometry{right=1.5cm}% правое поле
+\geometry{top=1cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+\newcommand{\hr}{\begin{center} \line(1,0){450} \end{center}}
+
+\begin{document}
+
+
+\begin{center}
+    \Huge \textbf{Alexandr Fadeev}
+\end{center}
+
+\hr
+
+\subsection*{CONTACTS}
+
+11 Rabochaya Street, Podolsk, Moscow region, Russia, 142116
+
+Mobile: +7 (999) 920-45-25
+
+Email: frogcatcher@mail.ru
+
+Telegram: @frogitcher
+
+\hr
+
+\subsection*{PROFILE}
+
+Individual with 3.5 years experiance in Planning component for self-driving vehicles. 
+
+Good knowledge of C++ programming language and classic algorithms and data structures. 
+
+Experiance with classic optimization.
+
+Successful competitive programmer in past. Teacher and coach of various schools and bootcamps.
+
+Currently working on AI for Navio self-driving car.
+
+\hr
+
+ 
+\subsection*{PROFESSIONAL EXPERIENCE}
+
+\begin{multicols}{2}
+    \textbf{2022 - Present} 
+
+    \columnbreak
+
+    \textbf{Navio (ex. SberAutoTech)}
+
+    \textbf{Software engineer}
+\end{multicols}
+
+\begin{minipage}[c]{0.30\linewidth}
+    Speed planning for self-driving car:
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.60\linewidth}
+	Developed library of solvers for speed profile planning from ground up, using both discrete and continous optimization.
+	
+	Implemented features for speed planning solvers.
+	
+	Supported components <<around>> speed planning. 
+\end{minipage}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{minipage}[c]{0.30\linewidth}
+    Self-driving car planning:
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.60\linewidth}	
+	Developed features for geometry planning solvers.
+	
+	Optimized existing geometry planning algorithms.
+\end{minipage}
+
+\hr 
+
+\begin{multicols}{2}
+    \textbf{2021 – 2022} 
+
+    \columnbreak
+
+    \textbf{Yandex Self-Driving Group}
+
+    \textbf{Software engineer}
+\end{multicols}
+\begin{minipage}[c]{0.30\linewidth}
+    Automatic remote requests for unwanted situations prevention
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.60\linewidth}
+	Developed and implemented unwanted situations detectors.
+	
+	Supported transition from <<Watcher>> to <<Resolver-only>> methodology of robots overseering.
+\end{minipage}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{minipage}[c]{0.30\linewidth}
+    Robot routing
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.60\linewidth}
+	Developed features and fixed bugs for adaptation of self-driving car routing system for robot purposes.
+\end{minipage}
+
+\hr 
+
+\begin{multicols}{2}
+    \textbf{2022 - Present} 
+
+    \columnbreak
+
+    \textbf{NUST MISIS}
+
+    \textbf{Lecturer and seminarian}
+\end{multicols}
+
+\begin{minipage}[c]{0.15\linewidth}
+    Done:
+\end{minipage}
+\begin{minipage}[c]{0.75\linewidth}
+	5 semester-long courses on Algorithms and Data Structures and C++ programming language as a lecturer and/or a seminarian.
+\end{minipage}
+
+\hr 
+
+\begin{multicols}{2}
+    \textbf{2019 – 2022} 
+
+    \columnbreak
+
+    \textbf{ACM MISIS Coach}
+
+    \textbf{Teaching and administating}
+\end{multicols}
+
+\begin{minipage}[c]{0.15\linewidth}
+    Done:
+\end{minipage}
+\begin{minipage}[c]{0.75\linewidth}
+	Supervised several programming platform.
+	
+	Was a lecturer on several programming bootcamps.
+	
+	Was a informatics teacher assistant in school №179 in Moscow.
+
+\end{minipage}
+
+\hr 
+
+\subsection*{FORMAL EDUCATION}
+
+\begin{minipage}[c]{0.25\linewidth}
+    \textbf{2023 – Present}
+\end{minipage}
+\begin{minipage}[c]{0.65\linewidth}
+    \textbf{NUST MISIS Postgraduate}
+
+    Thesis topic: Speed planning for self-driving car
+\end{minipage}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{minipage}[c]{0.25\linewidth}
+    \textbf{2020 – 2023}
+\end{minipage}
+\begin{minipage}[c]{0.65\linewidth}
+    \textbf{NUST MISIS Master's degree}
+
+    Informatics and computer engineering
+\end{minipage}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{minipage}[c]{0.25\linewidth}
+    \textbf{2016 – 2020}
+\end{minipage}
+\begin{minipage}[c]{0.65\linewidth}
+    \textbf{NUST MISIS Bachelor's degree}
+
+    Applied mathematics
+\end{minipage}
+
+\hr
+
+
+\section*{SUPPLEMENTARY EDUCATION}
+
+\begin{minipage}[c]{0.25\linewidth}
+    \textbf{2017 – 2022} 
+\end{minipage}
+\begin{minipage}[c]{0.65\linewidth}
+    \textbf{ACM MISIS Student}
+    
+    \textbf{Competitive programming}
+\end{minipage}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{minipage}[c]{0.15\linewidth}
+    Done:
+\end{minipage}
+\begin{minipage}[c]{0.75\linewidth}
+	Solved algorithmic problems.
+	
+	Participated in one-man and three-man contests for 3 years.
+	
+	Took part in programming bootcamps.
+\end{minipage}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{minipage}[c]{0.15\linewidth}
+    Achieved:
+\end{minipage}
+\begin{minipage}[c]{0.75\linewidth}
+	4-times ICPC semifinalist, 3-times prize winner.
+	
+	Prize winner of various programming contests.
+	
+	Master rank on Codeforces programming platform.
+\end{minipage}
+
+\hr 
+
+\end{document}
+
+
